@@ -27,6 +27,7 @@ class ProjectsController < ApplicationController
   # POST /projects.json
   def create
     @project = Project.new(project_params)
+    @project.expected_completion_date = project_params[:expected_completion_date]
     respond_to do |format|
       if @project.save
         format.html { redirect_to root_url, notice: 'Project was successfully created.' }
@@ -39,6 +40,7 @@ class ProjectsController < ApplicationController
   # PATCH/PUT /projects/1
   # PATCH/PUT /projects/1.json
   def update
+    @project.expected_completion_date = project_params[:expected_completion_date]
     respond_to do |format|
       if @project.update(project_params)
         format.html { redirect_to root_url, notice: 'Project was successfully updated.' }
