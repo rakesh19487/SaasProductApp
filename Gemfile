@@ -13,6 +13,10 @@ gem 'devise'
 
 gem 'milia'
 
+gem 'twitter-bootstrap-rails'
+
+gem 'devise-bootstrap-views'
+
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
@@ -71,3 +75,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'rails-ujs', '~> 0.1.0'
+
+gem 'bootstrap-datepicker-rails'
